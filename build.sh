@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-rpm-ostree override remove sddm-wayland-sway sddm
+rpm-ostree override remove sddm-wayland-sway sddm firefox
 rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	fzf git curl htop neovim vim tmux go rbw wmenu
 
