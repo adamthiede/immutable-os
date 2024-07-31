@@ -12,12 +12,16 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# remove some base packages
 rpm-ostree override remove sddm-wayland-sway sddm \
 	firefox firefox-langpacks sway-config-fedora \
+	virtualbox-guest-additions \
 	--install sway-config-upstream
+
+# install preferred packages
 rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	fzf git curl htop neovim vim tmux go rbw wmenu \
-	xfce-polkit
+	xfce-polkit terminus-fonts
 
 #### Example for enabling a System Unit File
 #systemctl enable podman.socket
