@@ -25,7 +25,8 @@ rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	android-tools aria2 btop cargo rust curl dino discount \
 	doas fastfetch flashrom i3blocks i3status i3 imv isync \
 	jq kanshi keepassxc minetest mosh mousepad mpc mpd ncmpcpp \
-	ncdu nethack newsboat nmap pmbootstrap rsync seahorse
+	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
+	NetworkManager-tui
 
 #### Example for enabling a System Unit File
 #systemctl enable podman.socket
