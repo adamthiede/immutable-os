@@ -13,6 +13,10 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # remove some base packages
+
+rpm-ostree override remove nano nano-default-editor \
+	--install vim-default-editor
+
 rpm-ostree override remove sddm-wayland-sway sddm \
 	firefox firefox-langpacks sway-config-fedora \
 	virtualbox-guest-additions \
