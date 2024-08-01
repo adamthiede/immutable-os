@@ -26,7 +26,8 @@ rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	doas fastfetch flashrom i3blocks i3status i3 imv isync \
 	jq kanshi keepassxc minetest mosh mousepad mpc mpd ncmpcpp \
 	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
-	NetworkManager-tui
+	NetworkManager-tui \
+	xorg-x11-server-Xorg xorg-x11-drv-intel xorg-x11-drv-libinput
 
 #### Example for enabling a System Unit File
 #systemctl enable podman.socket
