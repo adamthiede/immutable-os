@@ -49,6 +49,15 @@ FROM quay.io/fedora-ostree-desktops/sericea:40
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
+RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
+    --mount=type=bind,from=ctx,src=/,dst=/ctx \
+    --mount=type=bind,from=config,src=/rpms,dst=/tmp/rpms \
+    --mount=type=bind,from=akmods,src=/rpms/ublue-os,dst=/tmp/akmods-rpms \
+    --mount=type=bind,from=kernel,src=/tmp/rpms,dst=/tmp/kernel-rpms \
+    mkdir -p /var/lib && mv /staged-alternatives /var/lib/alternatives && \
+    mkdir -p /var/tmp && \
+    chmod -R 1777 /var/tmp
+
 COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
