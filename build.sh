@@ -14,10 +14,12 @@ RELEASE="$(rpm -E %fedora)"
 
 # remove some base packages
 
-rpm-ostree override remove sddm-wayland-sway sddm nano \
+rpm-ostree override remove sddm-wayland-sway sddm \
 	firefox firefox-langpacks sway-config-fedora \
-	virtualbox-guest-additions nano-default-editor \
-	--install sway-config-upstream vim-default-editor
+	virtualbox-guest-additions \
+	--install sway-config-upstream
+rpm-ostree override remove nano nano-default-editor \
+	--install vim-default-editor
 
 # install preferred packages
 rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
