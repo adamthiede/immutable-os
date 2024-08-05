@@ -25,7 +25,7 @@ rpm-ostree override remove sddm-wayland-sway sddm \
 rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	fzf git curl htop neovim vim tmux go rbw wmenu \
 	xfce-polkit terminus-fonts wl-clipboard w3m aerc \
-	android-tools aria2 btop cargo rust curl dino discount \
+	android-tools aria2 btop curl dino discount \
 	doas fastfetch flashrom i3blocks i3status i3 imv isync \
 	jq kanshi keepassxc minetest mosh mousepad mpc mpd ncmpcpp \
 	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
