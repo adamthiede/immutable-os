@@ -17,8 +17,8 @@ RELEASE="$(rpm -E %fedora)"
 rpm-ostree override remove sddm-wayland-sway sddm \
 	firefox firefox-langpacks sway-config-fedora \
 	virtualbox-guest-additions \
-	--install sway-config-upstream
-rpm-ostree override remove nano nano-default-editor \
+	nano nano-default-editor \
+	--install sway-config-upstream \
 	--install vim-default-editor
 
 # install preferred packages
