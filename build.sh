@@ -29,7 +29,7 @@ rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	doas fastfetch flashrom i3blocks i3status i3 imv isync \
 	jq kanshi keepassxc minetest mosh mousepad mpc mpd ncmpcpp \
 	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
-	gvfs-nfs \
+	gvfs-nfs fedora-flathub-remote \
 	NetworkManager-tui syncthing tailscale \
 	xorg-x11-server-Xorg xorg-x11-drv-intel xorg-x11-drv-libinput
 
