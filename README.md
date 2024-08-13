@@ -1,4 +1,25 @@
-# image-template
+# How-To:
+
+0. Install Fedora Silverblue, Sericea, whatever.
+1. First pin your original deployment:
+
+```
+sudo ostree admin pin 0
+```
+
+2. Rebase to the image:
+
+```
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/adamthiede/immutable-os:latest
+```
+
+3. Rebase to the image in a verified way??
+
+```
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/adamthiede/immutable-os:latest
+```
+
+That's it.
 
 # Purpose
 
