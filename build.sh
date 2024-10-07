@@ -12,6 +12,12 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+rm -rf /etc/yum.repos.d/negativo17*
+
+rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+rpm-ostree update --uninstall $(rpm -q rpmfusion-free-release) --install rpmfusion-free-release
+
 # remove some base packages
 
 rpm-ostree override remove sddm-wayland-sway sddm \
@@ -27,7 +33,7 @@ rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	xfce-polkit terminus-fonts wl-clipboard w3m aerc \
 	android-tools aria2 btop cargo rust curl dino discount \
 	doas fastfetch flashrom i3blocks i3status i3 imv isync \
-	jq kanshi keepassxc minetest mosh mousepad mpc ncmpcpp \
+	jq kanshi keepassxc minetest mosh mousepad mpc mpd ncmpcpp \
 	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
 	gvfs-nfs fedora-flathub-remote \
 	NetworkManager-tui syncthing tailscale \
