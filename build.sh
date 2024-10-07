@@ -16,8 +16,6 @@ rm -rf /etc/yum.repos.d/negativo17*
 
 rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-rpm-ostree update --uninstall $(rpm -q rpmfusion-free-release) --install rpmfusion-free-release
-
 # remove some base packages
 
 rpm-ostree override remove sddm-wayland-sway sddm \
