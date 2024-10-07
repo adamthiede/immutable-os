@@ -24,7 +24,8 @@ rpm-ostree override remove sddm-wayland-sway sddm \
 	--install vim-default-editor
 
 # install preferred packages
-rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
+rpm-ostree install mpv ffmpeg yt-dlp \
+	sway foot bemenu j4-dmenu-desktop \
 	fzf git curl htop neovim vim tmux go rbw wmenu \
 	xfce-polkit terminus-fonts wl-clipboard w3m aerc \
 	android-tools aria2 btop cargo rust curl dino discount \
@@ -33,6 +34,7 @@ rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
 	gvfs-nfs fedora-flathub-remote \
 	NetworkManager-tui syncthing tailscale \
+	libva-intel-driver \
 	xorg-x11-server-Xorg xorg-x11-drv-intel xorg-x11-drv-libinput
 
 #### Example for enabling a System Unit File
