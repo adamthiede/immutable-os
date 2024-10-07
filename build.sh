@@ -27,7 +27,7 @@ rpm-ostree install mpv ffmpeg sway foot bemenu j4-dmenu-desktop \
 	xfce-polkit terminus-fonts wl-clipboard w3m aerc \
 	android-tools aria2 btop cargo rust curl dino discount \
 	doas fastfetch flashrom i3blocks i3status i3 imv isync \
-	jq kanshi keepassxc minetest mosh mousepad mpc mpd ncmpcpp \
+	jq kanshi keepassxc minetest mosh mousepad mpc ncmpcpp \
 	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
 	gvfs-nfs fedora-flathub-remote \
 	NetworkManager-tui syncthing tailscale \
