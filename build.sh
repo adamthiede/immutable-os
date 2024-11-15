@@ -25,16 +25,16 @@ rpm-ostree override remove sddm-wayland-sway sddm \
 
 # install preferred packages
 rpm-ostree install mpv ffmpeg yt-dlp \
-	sway foot bemenu j4-dmenu-desktop \
-	fzf git curl htop neovim vim tmux go rbw wmenu \
+	sway foot bemenu j4-dmenu-desktop waybar \
+	fzf git curl htop neovim vim tmux go \
 	xfce-polkit terminus-fonts wl-clipboard w3m aerc \
 	android-tools aria2 btop cargo rust curl dino discount \
-	doas fastfetch flashrom i3blocks i3status i3 imv isync \
+	doas fastfetch flashrom i3status i3 imv isync \
 	jq kanshi keepassxc minetest mosh mousepad mpc mpd ncmpcpp \
-	ncdu nethack newsboat nmap pmbootstrap rsync seahorse \
+	ncdu nethack newsboat nmap rsync seahorse \
 	gvfs-nfs fedora-flathub-remote \
 	NetworkManager-tui syncthing tailscale \
-	libva-intel-driver \
+ 	river \
 	xorg-x11-server-Xorg xorg-x11-drv-intel xorg-x11-drv-libinput
 
 #### Example for enabling a System Unit File
